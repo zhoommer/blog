@@ -56,7 +56,11 @@ const posts = (await getCollection('blog')).sort(
 				margin: 0;
 				color: rgb(var(--black));
 				line-height: 1;
-			}
+        width: 13em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 			.date {
 				margin: 0;
 				color: rgb(var(--gray));
