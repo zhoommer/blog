@@ -1,7 +1,7 @@
 ---
 title: 'Neovim Neden Günlük Kullandığım Editör Haline Geldi'
 description: 'Neovim'
-pubDate: 'May 05 2025'
+pubDate: 'May 02 2025'
 heroImage: '/lazyvim.png'
 ---
 
