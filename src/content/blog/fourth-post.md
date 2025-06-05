@@ -25,6 +25,37 @@ Bu kombinasyon, başlangıçta hızlı prototipleme ve tutarlılık vaadi sunuyo
    * Bileşen kodunu sadeleştirip minimal bir test ortamında çalıştırdım.
    * Chrome DevTools’tan event listener ve CSS çakışmalarını inceledim.
 3. **className Karmaşası:** Tailwind'in utility-first yaklaşımı nedeniyle HTML elementlerinin className'leri çok uzun ve karmaşık hale geldi. Hangi stilin nereden geldiğini takip etmek zorlaştı.
+  * Tailwind örneği: 
+  ```html
+  <div class="flex items-center justify-between px-4 py-2 bg-white border border-gray-300 rounded-lg shadow-md hover:bg-gray-100 transition duration-300 ease-in-out text-sm text-gray-800 font-medium">
+  Card
+  </div>
+```
+  * Css Örneği:
+  ```css
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+  transition: background-color 0.3s ease-in-out;
+}
+.card:hover {
+  background-color: #f3f4f6;
+}
+```
+* Şimdi div elementimi bu şekilde kullanabilirim. 
+```html
+<div class='card'>Card</div>
+```
+
 4. **Sonuç:** Her denemede farklı bir hata veya sıfır tepki; sonuçta bileşeni eski haline döndürmek için çok fazla zaman harcadım.
 
 ## Çözüm Arayışları
