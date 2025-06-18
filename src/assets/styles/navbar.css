@@ -32,8 +32,39 @@ nav a {
   text-decoration: none;
 }
 
+.internal-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.internal-links a {
+  position: relative;
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  padding: 0 !important;
+}
+
+.internal-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: all 0.3s ease-out;
+}
+
+.internal-links a:hover::after {
+  width: 100%;
+}
+
 nav a.active {
   text-decoration: none;
+  color: var(--accent);
 }
 
 .social-links,
